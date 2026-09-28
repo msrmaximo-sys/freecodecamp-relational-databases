@@ -10,11 +10,12 @@ El objetivo es practicar cómo organizar información en tablas, relacionarlas m
 
 | Trabajo | Tipo | Qué practica |
 | --- | --- | --- |
-| [Personajes de videojuegos](ejercicios/postgresql/personajes-videojuegos/) | Ejercicio guiado | Tablas, claves, relaciones e inserción de datos. |
-| [Cinco programas de Bash](ejercicios/bash/cinco-programas/) | Ejercicio guiado | Variables, entrada por teclado, argumentos, condiciones, bucles y funciones. |
+| [Personajes de videojuegos](ejercicios/1personaje-videojuegos-postgresql/) | Ejercicio guiado | Tablas, claves, relaciones e inserción de datos. |
+| [Cinco programas de Bash](ejercicios/2cinco-programas-bash/) | Ejercicio guiado | Variables, entrada por teclado, argumentos, condiciones, bucles y funciones. |
+| [Base de estudiantes — parte 1](ejercicios/3basedatos-estudiantes-parte1-bash-sql/) | Ejercicio guiado | Importación de CSV mediante Bash y PostgreSQL; estudiantes, carreras y cursos. |
 | [Cuerpos celestes](proyectos-certificacion/cuerpos-celestes/) | Proyecto de certificación | Diseño de una base PostgreSQL y relaciones entre galaxias, estrellas, planetas y lunas. |
 
-Actualmente contiene **dos archivos SQL y cinco scripts Bash**, además de la documentación. Incluir un proyecto de certificación no significa que el curso completo esté terminado.
+Actualmente contiene **tres archivos SQL, seis scripts Bash y dos archivos CSV**, además de la documentación. Incluir un proyecto de certificación no significa que el curso completo esté terminado.
 
 ## Organización
 
@@ -24,22 +25,11 @@ freecodecamp-relational-databases/
 ├── .gitignore
 ├── .gitattributes
 ├── ejercicios/
-│   ├── postgresql/
-│   │   └── personajes-videojuegos/
-│   │       ├── README.md
-│   │       └── mariodb.sql
-│   └── bash/
-│       └── cinco-programas/
-│           ├── README.md
-│           ├── questionnaire.sh
-│           ├── countdown.sh
-│           ├── bingo.sh
-│           ├── fortune.sh
-│           └── five.sh
+│   ├── 1personaje-videojuegos-postgresql/
+│   ├── 2cinco-programas-bash/
+│   └── 3basedatos-estudiantes-parte1-bash-sql/
 └── proyectos-certificacion/
     └── cuerpos-celestes/
-        ├── README.md
-        └── universe.sql
 ```
 
 ## Tecnologías
@@ -56,7 +46,7 @@ Cada trabajo tiene su propio README con requisitos, explicación y ejemplos. No 
 
 Para los scripts se necesita Bash. En Windows se pueden abrir desde Git Bash; PowerShell sirve para los comandos de Git, pero no interpreta directamente el lenguaje Bash. Para los archivos SQL se necesita un servidor PostgreSQL y el cliente psql.
 
-**Antes de restaurar `universe.sql`, leé su README:** el archivo original del curso elimina y recrea una base llamada `universe`. Además, conserva configuraciones del entorno Linux donde fue generado.
+**Antes de restaurar `universe.sql` o `students.sql`, leé el README correspondiente:** eliminan y recrean sus respectivas bases y conservan configuraciones del entorno Linux del curso. El importador de estudiantes también vacía sus tablas antes de cargar los CSV.
 
 ## Conceptos de bases de datos
 

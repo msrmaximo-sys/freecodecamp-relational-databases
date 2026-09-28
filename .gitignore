@@ -4,3 +4,6 @@
 !.env.example
 .pgpass
 pgpass.conf
+
+# Historiales locales de terminal
+commandhistory*.txt
