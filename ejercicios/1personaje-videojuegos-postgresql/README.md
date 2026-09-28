@@ -32,7 +32,7 @@ Se necesita PostgreSQL en ejecución y el cliente psql disponible. Desde la raí
 
 ```sh
 psql -U postgres -d postgres -v ON_ERROR_STOP=1 -c "CREATE DATABASE mario_database;"
-psql -U postgres -d mario_database -v ON_ERROR_STOP=1 -f ejercicios/postgresql/personajes-videojuegos/mariodb.sql
+psql -U postgres -d mario_database -v ON_ERROR_STOP=1 -f ejercicios/1personaje-videojuegos-postgresql/mariodb.sql
 ```
 
 `postgres` es el usuario de ejemplo; reemplazalo por el de tu instalación si corresponde. La conexión puede pedir contraseña. Para otro servidor o puerto, agregá las opciones `-h` y `-p`.
@@ -57,4 +57,4 @@ ORDER BY c.name, a.action;
 
 La segunda consulta muestra los 21 pares personaje-acción. JOIN combina registros de tablas relacionadas. Escribí `\q` para salir de psql.
 
-[Volver al repositorio](../../../README.md)
+[Volver al repositorio](../../README.md)

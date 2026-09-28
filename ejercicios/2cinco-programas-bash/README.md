@@ -19,7 +19,7 @@ Bash y utilidades habituales como sleep y chmod. No se necesita PostgreSQL. En W
 Desde la raíz del repositorio, en Bash:
 
 ```bash
-cd ejercicios/bash/cinco-programas
+cd ejercicios/2cinco-programas-bash
 bash questionnaire.sh
 bash countdown.sh 3
 bash bingo.sh
@@ -48,4 +48,4 @@ El permiso de ejecución es necesario porque five.sh llama a los demás con `./n
 - Ninguno guarda resultados en una base de datos.
 - Los archivos utilizan saltos de línea LF, conservados mediante .gitattributes.
 
-[Volver al repositorio](../../../README.md)
+[Volver al repositorio](../../README.md)
