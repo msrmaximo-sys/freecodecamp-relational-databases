@@ -7,3 +7,6 @@ pgpass.conf
 
 # Historiales locales de terminal
 commandhistory*.txt
+commandhistory*.sh
+commandhistory*.bash
+commnadhistory*.sh

@@ -13,9 +13,10 @@ El objetivo es practicar cómo organizar información en tablas, relacionarlas m
 | [Personajes de videojuegos](ejercicios/1personaje-videojuegos-postgresql/) | Ejercicio guiado | Tablas, claves, relaciones e inserción de datos. |
 | [Cinco programas de Bash](ejercicios/2cinco-programas-bash/) | Ejercicio guiado | Variables, entrada por teclado, argumentos, condiciones, bucles y funciones. |
 | [Base de estudiantes — parte 1](ejercicios/3basedatos-estudiantes-parte1-bash-sql/) | Ejercicio guiado | Importación de CSV mediante Bash y PostgreSQL; estudiantes, carreras y cursos. |
+| [Base de estudiantes — parte 2](ejercicios/3basedatos-estudiantes-parte2-bash-sql/) | Ejercicio guiado | Consultas con filtros, agregaciones, agrupaciones y relaciones entre estudiantes, carreras y cursos. |
 | [Cuerpos celestes](proyectos-certificacion/cuerpos-celestes/) | Proyecto de certificación | Diseño de una base PostgreSQL y relaciones entre galaxias, estrellas, planetas y lunas. |
 
-Actualmente contiene **tres archivos SQL, seis scripts Bash y dos archivos CSV**, además de la documentación. Incluir un proyecto de certificación no significa que el curso completo esté terminado.
+Actualmente contiene **cuatro archivos SQL, siete scripts Bash y dos archivos CSV**, además de la documentación. Incluir un proyecto de certificación no significa que el curso completo esté terminado.
 
 ## Organización
 
@@ -27,7 +28,8 @@ freecodecamp-relational-databases/
 ├── ejercicios/
 │   ├── 1personaje-videojuegos-postgresql/
 │   ├── 2cinco-programas-bash/
-│   └── 3basedatos-estudiantes-parte1-bash-sql/
+│   ├── 3basedatos-estudiantes-parte1-bash-sql/
+│   └── 3basedatos-estudiantes-parte2-bash-sql/
 └── proyectos-certificacion/
     └── cuerpos-celestes/
 ```
@@ -46,7 +48,7 @@ Cada trabajo tiene su propio README con requisitos, explicación y ejemplos. No 
 
 Para los scripts se necesita Bash. En Windows se pueden abrir desde Git Bash; PowerShell sirve para los comandos de Git, pero no interpreta directamente el lenguaje Bash. Para los archivos SQL se necesita un servidor PostgreSQL y el cliente psql.
 
-**Antes de restaurar `universe.sql` o `students.sql`, leé el README correspondiente:** eliminan y recrean sus respectivas bases y conservan configuraciones del entorno Linux del curso. El importador de estudiantes también vacía sus tablas antes de cargar los CSV.
+**Antes de restaurar `universe.sql` o `students.sql`, leé el README correspondiente:** los volcados de Cuerpos celestes y Estudiantes parte 1 eliminan y recrean sus respectivas bases; el de Estudiantes parte 2 reemplaza las cuatro tablas dentro de la base de destino. Conservan configuraciones del entorno Linux del curso. El importador de estudiantes también vacía sus tablas antes de cargar los CSV.
 
 ## Conceptos de bases de datos
 
